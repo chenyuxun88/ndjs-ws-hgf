@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>Green Eats - Healthy & Delicious</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -17,7 +17,7 @@
             --primary: #2e7d32;
             --secondary: #4caf50;
             --accent: #8bc34a;
-            --light: #e8f5e9;
+            --light: #f1f8e9; /* Slightly warmer light green */
             --dark: #1b5e20;
             --text: #333333;
             --white: #ffffff;
@@ -101,7 +101,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1540420773420-2356b2de801f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -182,48 +182,48 @@
             margin: 0 auto;
         }
 
-        .about-content {
+        .philosophy-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
         }
 
-        .about-img {
+        .philosophy-img {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        .about-img img {
+        .philosophy-img img {
             width: 100%;
             height: auto;
             display: block;
             transition: transform 0.5s ease;
         }
 
-        .about-img:hover img {
+        .philosophy-img:hover img {
             transform: scale(1.05);
         }
 
-        .about-text h3 {
+        .philosophy-text h3 {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             color: var(--dark);
         }
 
-        .about-text p {
+        .philosophy-text p {
             margin-bottom: 1.5rem;
         }
 
-        .stats {
+        .benefits {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-top: 3rem;
         }
 
-        .stat-item {
+        .benefit-item {
             text-align: center;
             padding: 2rem 1rem;
             background-color: var(--white);
@@ -232,37 +232,38 @@
             transition: transform 0.3s ease;
         }
 
-        .stat-item:hover {
+        .benefit-item:hover {
             transform: translateY(-10px);
         }
 
-        .stat-item i {
+        .benefit-item i {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 1rem;
         }
 
-        .stat-item h3 {
-            font-size: 2.5rem;
+        .benefit-item h3 {
+            font-size: 1.5rem;
             color: var(--dark);
             margin-bottom: 0.5rem;
         }
 
-        .stat-item p {
+        .benefit-item p {
             color: var(--text);
+            font-size: 0.9rem;
         }
 
-        .initiatives {
+        .recipes {
             background-color: var(--white);
         }
 
-        .initiatives-grid {
+        .recipes-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        .initiative-card {
+        .recipe-card {
             background-color: var(--light);
             border-radius: 10px;
             overflow: hidden;
@@ -270,37 +271,37 @@
             transition: transform 0.3s ease;
         }
 
-        .initiative-card:hover {
+        .recipe-card:hover {
             transform: translateY(-10px);
         }
 
-        .initiative-img {
-            height: 200px;
+        .recipe-img {
+            height: 220px;
             overflow: hidden;
         }
 
-        .initiative-img img {
+        .recipe-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .initiative-card:hover .initiative-img img {
+        .recipe-card:hover .recipe-img img {
             transform: scale(1.1);
         }
 
-        .initiative-content {
+        .recipe-content {
             padding: 1.5rem;
         }
 
-        .initiative-content h3 {
+        .recipe-content h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
 
-        .initiative-content p {
+        .recipe-content p {
             margin-bottom: 1.5rem;
         }
 
@@ -423,11 +424,11 @@
         }
 
         @media (max-width: 992px) {
-            .about-content {
+            .philosophy-content {
                 grid-template-columns: 1fr;
             }
             
-            .initiatives-grid {
+            .recipes-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
             
@@ -435,7 +436,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
             
-            .stats {
+            .benefits {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -475,7 +476,7 @@
                 display: block;
             }
             
-            .initiatives-grid {
+            .recipes-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -483,14 +484,9 @@
                 grid-template-columns: 1fr;
             }
             
-            .stats {
+            .benefits {
                 grid-template-columns: 1fr;
             }
-        }
-
-        /* Animation for stats counter */
-        .counter {
-            transition: all 0.5s ease;
         }
     </style>
 </head>
@@ -499,8 +495,8 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
+                <i class="fas fa-leaf"></i>
+                <span>Green Eats</span>
             </div>
             <nav>
                 <div class="mobile-menu">
@@ -508,9 +504,9 @@
                 </div>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#join-us">Join Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -520,92 +516,92 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>Nourish Your Body, Flourish Your Life</h1>
+            <p>Discover the vibrant world of healthy green cuisine. Simple, delicious, and packed with natural goodness.</p>
+            <a href="#recipes" class="btn">Explore Recipes</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Philosophy Section -->
+    <section id="philosophy">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>Our Philosophy</h2>
+                <p>We believe that eating healthy should be effortless, enjoyable, and accessible to everyone.</p>
             </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+            <div class="philosophy-content">
+                <div class="philosophy-img">
+                    <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80" alt="Fresh vegetables on a wooden board">
                 </div>
-                <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
+                <div class="philosophy-text">
+                    <h3>From Nature's Kitchen to Yours</h3>
+                    <p>Our mission is to inspire a love for wholesome, plant-centric food. We focus on fresh, seasonal ingredients to create recipes that are not only good for you but also burst with flavor.</p>
+                    <p>We champion a balanced approach to nutrition, emphasizing whole foods, mindful eating, and the simple joy of preparing and sharing a meal.</p>
+                    <p>Join us in celebrating a lifestyle where health and taste coexist beautifully on the same plate.</p>
                     <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
-            <div class="stats">
-                <div class="stat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Natural Energy</h3>
+                    <p>Fuel your day with nutrient-dense foods that provide sustained energy without the crash.</p>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
+                <div class="benefit-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Heart Health</h3>
+                    <p>Support your cardiovascular system with foods rich in vitamins, minerals, and healthy fats.</p>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
-                    <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
+                <div class="benefit-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mental Clarity</h3>
+                    <p>Enhance focus and cognitive function with a diet that nourishes your brain.</p>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                <div class="benefit-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Vibrant Well-being</h3>
+                    <p>Feel your best from the inside out with meals that promote glowing skin and strong immunity.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Initiatives Section -->
-    <section class="initiatives" id="initiatives">
+    <!-- Recipes Section -->
+    <section class="recipes" id="recipes">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>Featured Recipes</h2>
+                <p>Explore some of our favorite green dishes that are easy to make and delicious to eat.</p>
             </div>
-            <div class="initiatives-grid">
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <div class="recipe-img">
+                        <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Green Smoothie Bowl">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
-                    </div>
-                    <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="recipe-content">
+                        <h3>Ultimate Green Smoothie</h3>
+                        <p>A refreshing blend of spinach, banana, mango, and almond milk to kickstart your morning.</p>
+                        <a href="#" class="btn">Get Recipe</a>
                     </div>
                 </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                <div class="recipe-card">
+                    <div class="recipe-img">
+                        <img src="https://images.unsplash.com/photo-1547496502-59026020f269?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%3D&auto=format&fit=crop&w=1974&q=80" alt="Quinoa Salad">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="recipe-content">
+                        <h3>Avocado Quinoa Salad</h3>
+                        <p>A hearty and flavorful salad with quinoa, avocado, cherry tomatoes, and a zesty lime dressing.</p>
+                        <a href="#" class="btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-img">
+                        <img src="https://images.unsplash.com/photo-1621194042343-a2b715b3556c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="Pesto Pasta">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Creamy Pesto Pasta</h3>
+                        <p>A comforting and healthy pasta dish featuring a vibrant, homemade basil pesto sauce.</p>
+                        <a href="#" class="btn">Get Recipe</a>
                     </div>
                 </div>
             </div>
@@ -613,11 +609,11 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="get-involved">
+    <section class="cta" id="join-us">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <h2>Join The Green Eats Community</h2>
+            <p>Subscribe to our newsletter for weekly recipes, nutrition tips, and inspiration delivered straight to your inbox.</p>
+            <a href="#" class="btn">Subscribe Now</a>
         </div>
     </section>
 
@@ -626,44 +622,44 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>Green Eats</h3>
+                    <p>Celebrating a healthy lifestyle through delicious, plant-forward food. Eat well, live fully.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Navigate</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#philosophy">Our Philosophy</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#join-us">Join Us</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>Recipe Categories</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
-                        <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Salads</a></li>
+                        <li><a href="#">Main Courses</a></li>
+                        <li><a href="#">Smoothies</a></li>
+                        <li><a href="#">Desserts</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Wellness Way, San Francisco</p>
+                    <p><i class="fas fa-phone"></i> +1 (415) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@greeneats.com</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2025 Green Eats. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -673,29 +669,6 @@
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
-
-        // Counter Animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.counter');
-            const speed = 200; // The lower the slower
-            
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                
-                const inc = target / speed;
-                
-                if(count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            });
-        }
-
-        // Initialize counters when page loads
-        window.addEventListener('load', animateCounters);
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -707,16 +680,21 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
+                    // Adjust offset for sticky header height
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: offsetPosition,
                         behavior: 'smooth'
                     });
                     
+                    // Close mobile menu after clicking a link
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
